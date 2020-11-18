@@ -83,11 +83,9 @@ function addActiveSection() {
 
 //Add active to nav list 
 function addActiveNav(data) {
-  console.log("hit it")
   navList.querySelectorAll('li a').forEach(element => {
     element.classList.remove('active')
     if (data === element.innerText) {
-      console.log(element.innerText);
       element.classList.add('active')
     }
   });
